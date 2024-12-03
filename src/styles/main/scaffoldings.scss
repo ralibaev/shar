@@ -1,0 +1,54 @@
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+html {
+  font-family: "Arial";
+  font-size: 10px;
+  font-weight: normal;
+  color: white;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #282829;
+}
+footer {
+  background-color: #222222;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+picture,
+img {
+  font-size: 0;
+  line-height: 0;
+  pointer-events: none;
+}
+.container {
+  width: calc(100% - 100px);
+  max-width: 1600px;
+  padding-left: $laptop-paddings;
+  padding-right: $laptop-paddings;
+  margin: 0 auto;
+}
+header,
+.page-main,
+footer {
+  overflow: hidden;
+}
+h1 {
+  margin: 0;
+  font-family: "Prata";
+  font-size: 80px;
+  line-height: 1.2;
+}
